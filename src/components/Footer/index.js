@@ -42,6 +42,11 @@ const Footer = () => (
               Novidade
             </a>
           </S.LinkItem>
+          <S.LinkItem>
+            <a href="#" alt="Downloads">
+              Downloads
+            </a>
+          </S.LinkItem>
         </S.NavLinks>
         <S.VR>
           <S.VRTitle>Grupo VR Investimentos</S.VRTitle>
