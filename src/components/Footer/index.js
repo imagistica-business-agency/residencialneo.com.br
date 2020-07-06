@@ -2,6 +2,7 @@ import React from "react"
 
 import * as S from "./styled"
 import logo from "../../images/logo.svg"
+import VRLogo from "../../images/VRLogo.svg"
 
 const Footer = () => (
   <S.FooterWrapper>
@@ -45,8 +46,17 @@ const Footer = () => (
         <S.VR>
           <S.VRTitle>Grupo VR Investimentos</S.VRTitle>
           <p>
-            A VR Investimentos tem as melhores oportunidades de investimentos
-            imobiliários no oeste do Paraná.
+            A{" "}
+            <a
+              href="http://valorrealinvest.com.br/"
+              alt="VR Investimentos"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              VR Investimentos
+            </a>{" "}
+            tem as melhores oportunidades de investimentos imobiliários no oeste
+            do Paraná.
           </p>
         </S.VR>
         <S.Address>
@@ -100,6 +110,14 @@ const Footer = () => (
           </a>
           .
         </S.Copy>
+        <a
+          href="http://valorrealinvest.com.br/"
+          alt="VR Investimentos"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <S.VRLogo src={VRLogo} alt="" />
+        </a>
       </S.FooterCopySection>
     </S.FooterCopy>
   </S.FooterWrapper>

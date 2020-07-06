@@ -25,7 +25,7 @@ export const FooterMainSection = styled.div`
   display: grid;
   grid-template-columns: 4fr 2fr 3fr 3fr;
   gap: 30px;
-  padding: 100px 0 90px;
+  padding: 100px 30px 90px;
   max-width: 1640px;
   margin: 0 auto;
 `
@@ -38,7 +38,11 @@ export const LinkItem = styled.li`
   list-style-type: none;
 `
 
-export const VR = styled.div``
+export const VR = styled.div`
+  a {
+    font-weight: 700;
+  }
+`
 
 export const VRTitle = styled.h5`
   font-size: 16px;
@@ -56,7 +60,7 @@ export const FooterCopySection = styled.div`
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
   gap: 30px;
-  padding: 40px 0 30px;
+  padding: 40px 30px 30px;
   max-width: 1640px;
   margin: 0 auto;
   text-transform: uppercase;
@@ -83,4 +87,8 @@ export const Copy = styled.div`
   a {
     font-weight: 700;
   }
+`
+
+export const VRLogo = styled.img`
+  max-width: 40px;
 `
