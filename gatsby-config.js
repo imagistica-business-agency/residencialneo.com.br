@@ -28,5 +28,19 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Krona One`,
+          },
+          {
+            family: `Rubik`,
+            variants: [`400`, `400i`, `500`, `700`],
+          },
+        ],
+      },
+    },
   ],
 }
