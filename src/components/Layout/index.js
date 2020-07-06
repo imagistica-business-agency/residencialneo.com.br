@@ -3,9 +3,10 @@ import Footer from "../Footer"
 
 import GlobalStyled from "./global"
 
-const Layout = (main) => (
+const Layout = ({ children }) => (
   <>
     <GlobalStyled />
+    {children}
     <Footer />
   </>
 )
