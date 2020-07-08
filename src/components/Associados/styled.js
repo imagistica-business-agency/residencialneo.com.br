@@ -1,8 +1,10 @@
 import styled from "styled-components"
+import BackgroundImage from "gatsby-background-image"
 
-export const AssociadosWrapper = styled.section`
+export const AssociadosWrapper = styled.section``
+
+export const Image = styled(BackgroundImage)`
   padding: 200px 0;
-  background: grey;
 `
 
 export const Title = styled.h2`
