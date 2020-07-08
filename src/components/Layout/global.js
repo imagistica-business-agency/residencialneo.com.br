@@ -19,6 +19,20 @@ const GlobalStyles = createGlobalStyle`
 
   h2 {
     font-size: 40px;
+    margin-bottom: 40px;
+
+    span.small {
+      font-size: 25px;
+    }
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  td {
+    height: 50px;
+    border-bottom: 1px solid #c0c0c0;
   }
 `
 
