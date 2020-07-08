@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const NavWrapper = styled.nav`
   position: fixed;
-  height: 100px;
+  height: 80px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
 `
@@ -17,5 +17,5 @@ export const NavMain = styled.div`
 `
 
 export const Logo = styled.img`
-  height: 60px;
+  height: 40px;
 `
