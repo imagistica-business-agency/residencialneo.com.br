@@ -47,10 +47,6 @@ collections:
         timeFormat: "HH:mm"
         format: "YYYY-MM-DD HH:mm:ss"
 
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-
       - label: "Texto"
         name: "body"
         widget: "markdown"
