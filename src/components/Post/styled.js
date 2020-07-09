@@ -53,6 +53,21 @@ export const PostWrapper = styled.div`
     max-width: 1000px;
     margin-left: 320px;
     margin-right: 320px;
+
+    ${media.lessThan("1500px")`
+      margin-left: 200px;
+      margin-right: 200px;
+    `}
+
+    ${media.lessThan("1100px")`
+      margin-left: 100px;
+      margin-right: 100px;
+    `}
+
+    ${media.lessThan("770px")`
+      margin-left: 40px;
+      margin-right: 40px;
+    `}
   }
 
   figcaption {
