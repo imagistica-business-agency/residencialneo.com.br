@@ -11,7 +11,7 @@ export const NovidadesListWrapper = styled.section`
   font-size: 16px;
 
   ${media.lessThan("640px")`
-    padding: 80px 20px;
+    padding: 0;
   `}
 `
 

@@ -40,7 +40,11 @@ export const FooterMainSection = styled.div`
   `}
 `
 
-export const Logo = styled.div``
+export const Logo = styled.div`
+  ${media.lessThan("640px")`
+    display: none;
+  `}
+`
 
 export const NavLinks = styled.ul``
 
