@@ -11,7 +11,9 @@ const Footer = () => (
     <S.FooterMain>
       <S.FooterMainSection>
         <S.Logo>
-          <img src={logo} alt="Residencial Neo" />
+          <Link to="/" alt="Início" stripHash>
+            <img src={logo} alt="Residencial Neo" />
+          </Link>
         </S.Logo>
         <S.NavLinks>
           <S.LinkItem>

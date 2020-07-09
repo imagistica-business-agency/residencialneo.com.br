@@ -8,7 +8,10 @@ import logo from "../../images/logo.svg"
 const Nav = () => (
   <S.NavWrapper>
     <S.NavMain>
-      <S.Logo src={logo} alt="" />
+      <Link to="/" alt="Início" stripHash>
+        <S.Logo src={logo} alt="" />
+      </Link>
+
       <S.NavLinks>
         <S.LinkItem>
           <Link to="/" alt="Início" stripHash>
