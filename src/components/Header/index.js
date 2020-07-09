@@ -20,7 +20,7 @@ const IndexPage = () => {
 
   const image = banner.childImageSharp.fluid
 
-  return <S.HeaderWrapper fluid={image} />
+  return <S.HeaderWrapper fluid={image} id="top" />
 }
 
 export default IndexPage

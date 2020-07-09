@@ -13,7 +13,8 @@ export const NavWrapper = styled.nav`
   `}
 
   ${media.lessThan("670px")`
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    display: none;
   `}
 `
 
@@ -24,6 +25,14 @@ export const NavMain = styled.div`
   padding: 20px 30px;
   max-width: 1640px;
   margin: 0 auto;
+
+  ${media.lessThan("1225px")`
+    grid-template-columns: 1fr 10fr 3fr;
+  `}
+
+  ${media.lessThan("999px")`
+    grid-template-columns: 1fr 10fr;
+  `}
 
   ${media.lessThan("960px")`
     padding-top: 15px;
@@ -38,6 +47,40 @@ export const Logo = styled.img`
   `}
 `
 
+export const Nav = styled.nav``
+
+export const NavLinks = styled.ul`
+  text-align: center;
+`
+
+export const LinkItem = styled.li`
+  display: inline-block;
+  padding: 3px 10px;
+
+  ${media.lessThan("1200px")`
+      padding-top: 8px;
+    `}
+
+  ${media.lessThan("960px")`
+      padding-top: 3px;
+    `}
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    ${media.lessThan("768px")`
+      font-size: 12px;
+  `}
+  }
+`
+
 export const Button = styled.button`
   background: transparent;
   color: white;
@@ -50,4 +93,8 @@ export const Button = styled.button`
     background: white;
     color: black;
   }
+
+  ${media.lessThan("999px")`
+    display: none;
+  `}
 `

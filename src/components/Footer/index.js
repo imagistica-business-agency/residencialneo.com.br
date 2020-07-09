@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import * as S from "./styled"
@@ -14,9 +15,9 @@ const Footer = () => (
         </S.Logo>
         <S.NavLinks>
           <S.LinkItem>
-            <AnchorLink to="/" alt="Início" stripHash>
+            <Link to="/" alt="Início" stripHash>
               Início
-            </AnchorLink>
+            </Link>
           </S.LinkItem>
           <S.LinkItem>
             <AnchorLink to="/#plantas" alt="Plantas" stripHash>
