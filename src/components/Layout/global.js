@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import media from "styled-media-query"
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -11,6 +12,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     line-height: 1.5;
+
+    ${media.lessThan("1200px")`
+      font-size: 16px;
+    `}
   }
 
   h1, h2, h3, h4 {
@@ -23,7 +28,15 @@ const GlobalStyles = createGlobalStyle`
 
     span.small {
       font-size: 25px;
+
+      ${media.lessThan("1200px")`
+        font-size: 16px;
+      `}
     }
+
+    ${media.lessThan("1200px")`
+      font-size: 22px;
+    `}
   }
 
   p {

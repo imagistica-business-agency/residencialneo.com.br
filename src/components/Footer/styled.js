@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 import { FacebookCircle as Facebook } from "@styled-icons/boxicons-logos/FacebookCircle"
 import { InstagramWithCircle as Instagram } from "@styled-icons/entypo-social/InstagramWithCircle"
@@ -28,6 +29,15 @@ export const FooterMainSection = styled.div`
   padding: 100px 30px 90px;
   max-width: 1640px;
   margin: 0 auto;
+
+  ${media.lessThan("910px")`
+    grid-template-columns: 1fr 1fr;
+  `}
+
+  ${media.lessThan("640px")`
+    padding: 80px 20px;
+    grid-template-columns: 1fr;
+  `}
 `
 
 export const Logo = styled.div``
@@ -65,6 +75,11 @@ export const FooterCopySection = styled.div`
   margin: 0 auto;
   text-transform: uppercase;
   font-size: 12px;
+
+  ${media.lessThan("600px")`
+    grid-template-columns: 1fr 11fr;
+    padding-bottom: 0;
+  `}
 `
 
 export const SocialLinks = styled.div`
@@ -91,4 +106,8 @@ export const Copy = styled.div`
 
 export const VRLogo = styled.img`
   max-width: 40px;
+
+  ${media.lessThan("600px")`
+    display: none;
+  `}
 `

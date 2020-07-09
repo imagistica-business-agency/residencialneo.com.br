@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 import { Link } from "gatsby"
 
 import { RightArrowAlt as Arrow } from "@styled-icons/boxicons-regular/RightArrowAlt"
@@ -8,12 +9,24 @@ export const NovidadesWrapper = styled.section`
   max-width: 1640px;
   margin: 0 auto;
   font-size: 16px;
+
+  ${media.lessThan("640px")`
+    padding: 80px 20px;
+  `}
 `
 
 export const BlogList = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
+
+  ${media.lessThan("910px")`
+    grid-template-columns: 1fr 1fr;
+  `}
+
+  ${media.lessThan("640px")`
+    grid-template-columns: 1fr;
+  `}
 `
 
 export const BlogItem = styled.div``
@@ -31,6 +44,10 @@ export const BlogItemImage = styled.div`
   background: red;
   width: 100%;
   height: 350px;
+
+  ${media.lessThan("1200px")`
+    height: 250px;
+  `}
 `
 
 export const BlogItemTitle = styled.h5`
