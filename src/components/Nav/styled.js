@@ -5,6 +5,7 @@ export const NavWrapper = styled.nav`
   height: 80px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
 `
 
 export const NavMain = styled.div`

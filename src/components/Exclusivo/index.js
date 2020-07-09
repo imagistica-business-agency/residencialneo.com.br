@@ -1,43 +1,62 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import * as S from "./styled"
 
-const Exclusivo = () => (
-  <S.ExperienceWrapper>
-    <S.Image />
-    <S.TextWrapper>
-      <h2>
-        <span className="small">Exclusivo,</span>
-        <br />
-        seguro, anti-inflação
-      </h2>
+const Exclusivo = () => {
+  const { exclusivo } = useStaticQuery(
+    graphql`
+      query {
+        exclusivo: file(relativePath: { eq: "exclusivo.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 960, quality: 80) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `
+  )
 
-      <p>Investimento IMUNE à quebra de bancos;</p>
+  const image = exclusivo.childImageSharp.fluid
 
-      <p>NÃO PODE ser congelado pelo governo;</p>
+  return (
+    <S.ExperienceWrapper id="exclusivo">
+      <S.Image fluid={image} />
+      <S.TextWrapper>
+        <h2>
+          <span className="small">Exclusivo,</span>
+          <br />
+          seguro, anti-inflação
+        </h2>
 
-      <p>
-        PROTEÇÃO direta para o PODER DE COMPRA do seu dinheiro, para
-        investimentos de incorporação imobiliária ou aluguéis de imóveis.
-      </p>
+        <p>Investimento IMUNE à quebra de bancos;</p>
 
-      <h2>
-        <span className="small">Especialização</span>
-        <br />
-        transparência
-      </h2>
+        <p>NÃO PODE ser congelado pelo governo;</p>
 
-      <p>
-        Empresa com ampla especialidade em empreendimentos imobiliários a preço
-        de custo (Lei 4.591/64);
-      </p>
+        <p>
+          PROTEÇÃO direta para o PODER DE COMPRA do seu dinheiro, para
+          investimentos de incorporação imobiliária ou aluguéis de imóveis.
+        </p>
 
-      <p>
-        Acesso direto a todas as informações referentes ao empreendimento para
-        os associados, donos do negócio.
-      </p>
-    </S.TextWrapper>
-  </S.ExperienceWrapper>
-)
+        <h2>
+          <span className="small">Especialização</span>
+          <br />
+          transparência
+        </h2>
+
+        <p>
+          Empresa com ampla especialidade em empreendimentos imobiliários a
+          preço de custo (Lei 4.591/64);
+        </p>
+
+        <p>
+          Acesso direto a todas as informações referentes ao empreendimento para
+          os associados, donos do negócio.
+        </p>
+      </S.TextWrapper>
+    </S.ExperienceWrapper>
+  )
+}
 
 export default Exclusivo

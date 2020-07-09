@@ -9,7 +9,7 @@ const IndexPage = () => {
       query {
         banner: file(relativePath: { eq: "banner.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1920, quality: 100) {
+            fluid(maxWidth: 1920, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

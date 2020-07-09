@@ -3,7 +3,7 @@ import React from "react"
 import * as S from "./styled"
 
 const Novidades = () => (
-  <S.NovidadesWrapper>
+  <S.NovidadesWrapper id="novidades">
     <h2>Últimas novidades</h2>
 
     <S.BlogList>

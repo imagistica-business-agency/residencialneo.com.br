@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import BackgroundImage from "gatsby-background-image"
 
 export const DiferenciaisWrapper = styled.section`
   display: grid;
@@ -9,6 +10,4 @@ export const TextWrapper = styled.div`
   margin: 280px 10%;
 `
 
-export const Image = styled.div`
-  background: grey;
-`
+export const Image = styled(BackgroundImage)``
