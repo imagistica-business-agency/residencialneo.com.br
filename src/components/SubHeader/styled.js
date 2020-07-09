@@ -7,10 +7,11 @@ export const SubHeaderWrapper = styled.section`
   padding: 100px 30px;
 `
 
-export const Image = styled.div`
+export const Image = styled.div``
+
+export const Text = styled.div`
   padding: 100px 20%;
   font-family: "Krona one";
   text-align: center;
   color: white;
-  background: gray;
 `

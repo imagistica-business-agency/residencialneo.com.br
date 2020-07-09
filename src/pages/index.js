@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Nav from "../components/Nav"
 import Header from "../components/Header"
-import SubHeader from "../components/SubHeader"
+/* import SubHeader from "../components/SubHeader" */
 import Plantas from "../components/Plantas"
 import Experience from "../components/Experience"
 import Exclusivo from "../components/Exclusivo"
@@ -17,7 +17,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Nav />
     <Header />
-    <SubHeader />
+    {/* <SubHeader /> */}
     <Plantas />
     <Experience />
     <Exclusivo />
