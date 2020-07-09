@@ -1,0 +1,56 @@
+backend:
+  name: git-gateway
+  branch: master
+
+  commit_messages:
+    create: ":pencil: Creating {{slug}}"
+    update: ":pencil: Updating {{slug}}"
+    delete: ":fire: Deleting {{slug}}"
+    uploadMedia: "[skip ci] :bento: Uploading {{path}}"
+    deleteMedia: "[skip ci] :fire: Deleting {{path}}"
+
+media_folder: "/static/images"
+public_folder: "/images"
+
+locale: "pt"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "src/pages/novidades"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Template Key"
+        name: "templateKey"
+        widget: "hidden"
+        default: "blogPost"
+
+      - label: "Título"
+        name: "title"
+        widget: "string"
+
+      - label: "Imagem em destaque"
+        name: "image"
+        widget: "image"
+        media_library:
+          config:
+            multiple: false
+
+      - label: "Data"
+        name: "date"
+        widget: "datetime"
+        dateFormat: "DD/MM/YYYY"
+        timeFormat: "HH:mm"
+        format: "YYYY-MM-DD HH:mm:ss"
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+
+      - label: "Texto"
+        name: "body"
+        widget: "markdown"
