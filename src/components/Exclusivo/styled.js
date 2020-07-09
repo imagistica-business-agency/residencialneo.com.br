@@ -21,6 +21,21 @@ export const TextWrapper = styled.div`
   `}
 `
 
+export const Button = styled.button`
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background: white;
+    color: black;
+  }
+`
+
 export const Image = styled(BackgroundImage)`
   ${media.lessThan("890px")`
     height: 700px;

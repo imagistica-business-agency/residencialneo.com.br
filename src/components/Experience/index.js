@@ -78,6 +78,8 @@ const Experience = () => {
           <S.DotIcon />
           Entrada moderna com porte-cochère
         </p>
+
+        <S.Button>Consultar investimentos</S.Button>
       </S.TextWrapper>
       <S.Image fluid={image} />
     </S.ExperienceWrapper>

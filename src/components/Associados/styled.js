@@ -5,7 +5,7 @@ import BackgroundImage from "gatsby-background-image"
 export const AssociadosWrapper = styled.section``
 
 export const Image = styled(BackgroundImage)`
-  padding: 200px 0;
+  padding: 200px 0 150px;
 `
 
 export const Title = styled.h2`
@@ -40,4 +40,17 @@ export const Big = styled.span`
   ${media.lessThan("500px")`
     font-size: 30px;
   `}
+`
+export const Button = styled.button`
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background: white;
+    color: black;
+  }
 `

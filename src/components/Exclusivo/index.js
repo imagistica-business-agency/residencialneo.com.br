@@ -54,6 +54,8 @@ const Exclusivo = () => {
           Acesso direto a todas as informações referentes ao empreendimento para
           os associados, donos do negócio.
         </p>
+
+        <S.Button>Verificar disponibilidade</S.Button>
       </S.TextWrapper>
     </S.ExperienceWrapper>
   )

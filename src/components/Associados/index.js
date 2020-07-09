@@ -27,6 +27,8 @@ const Associados = () => {
           Já somos
           <br />
           <S.Big>305 associados</S.Big>
+          <br />
+          <S.Button>Seja associado</S.Button>
         </S.Title>
       </S.Image>
     </S.AssociadosWrapper>

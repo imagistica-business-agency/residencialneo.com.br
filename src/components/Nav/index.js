@@ -7,6 +7,8 @@ const Nav = () => (
   <S.NavWrapper>
     <S.NavMain>
       <S.Logo src={logo} alt="" />
+      <div />
+      <S.Button>Agende sua visita</S.Button>
     </S.NavMain>
   </S.NavWrapper>
 )

@@ -57,6 +57,8 @@ const Plantas = () => {
             </tr>
           </tbody>
         </table>
+
+        <S.Button>Agende sua visita</S.Button>
       </S.TextWrapper>
       <S.Image fluid={image} />
     </S.PlantasWrapper>
