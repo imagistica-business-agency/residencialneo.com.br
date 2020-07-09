@@ -1,4 +1,5 @@
 import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import * as S from "./styled"
 import logo from "../../images/logo.svg"
@@ -13,39 +14,39 @@ const Footer = () => (
         </S.Logo>
         <S.NavLinks>
           <S.LinkItem>
-            <a href="/" alt="Início">
+            <AnchorLink to="/" alt="Início" stripHash>
               Início
-            </a>
+            </AnchorLink>
           </S.LinkItem>
           <S.LinkItem>
-            <a href="#plantas" alt="Plantas">
+            <AnchorLink to="/#plantas" alt="Plantas" stripHash>
               Plantas
-            </a>
+            </AnchorLink>
           </S.LinkItem>
           <S.LinkItem>
-            <a href="#experience" alt="Experience">
+            <AnchorLink to="/#experience" alt="Experience" stripHash>
               Experience
-            </a>
+            </AnchorLink>
           </S.LinkItem>
           <S.LinkItem>
-            <a href="#exclusivo" alt="Exclusivo">
+            <AnchorLink to="/#exclusivo" alt="Exclusivo" stripHash>
               Exclusivo
-            </a>
+            </AnchorLink>
           </S.LinkItem>
           <S.LinkItem>
-            <a href="#diferenciais" alt="Diferenciais">
+            <AnchorLink to="/#diferenciais" alt="Diferenciais" stripHash>
               Diferenciais
-            </a>
+            </AnchorLink>
           </S.LinkItem>
           <S.LinkItem>
-            <a href="#novidades" alt="Novidade">
+            <AnchorLink to="/#novidades" alt="Novidade" stripHash>
               Novidade
-            </a>
+            </AnchorLink>
           </S.LinkItem>
           <S.LinkItem>
-            <a href="#" alt="Downloads">
+            <AnchorLink to="#" alt="Downloads">
               Downloads
-            </a>
+            </AnchorLink>
           </S.LinkItem>
         </S.NavLinks>
         <S.VR>
