@@ -32,7 +32,7 @@ const sendEmail = async ({ name, subject, phone, email, city, message }) => {
       to: emailTo,
       subject: "Formulário de contato do site",
       "h:Reply-To": `${name} <${email}>`,
-      text: emailBody,
+      html: emailBody,
     }
 
     mailgun.messages().send(mailData, (err) => {
