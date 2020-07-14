@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Modal from "../../components/Modal"
 
 import * as S from "./styled"
 
@@ -79,7 +80,9 @@ const Experience = () => {
           Entrada moderna com porte-cochère
         </p>
 
-        <S.Button>Consultar investimentos</S.Button>
+        <S.ButtonWrapper>
+          <Modal ButtonText="Consultar investimentos" />
+        </S.ButtonWrapper>
       </S.TextWrapper>
       <S.Image fluid={image} />
     </S.ExperienceWrapper>

@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Modal from "../../components/Modal"
 
 import * as S from "./styled"
 
@@ -55,7 +56,9 @@ const Exclusivo = () => {
           os associados, donos do negócio.
         </p>
 
-        <S.Button>Verificar disponibilidade</S.Button>
+        <S.ButtonWrapper>
+          <Modal ButtonText="Verificar disponibilidade" color="white" />
+        </S.ButtonWrapper>
       </S.TextWrapper>
     </S.ExperienceWrapper>
   )

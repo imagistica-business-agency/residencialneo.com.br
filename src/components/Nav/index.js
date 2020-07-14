@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import Modal from "../../components/Modal"
 
 import * as S from "./styled"
 import logo from "../../images/logo.svg"
@@ -49,7 +50,7 @@ const Nav = () => (
           </AnchorLink>
         </S.LinkItem>
       </S.NavLinks>
-      <S.Button>Agende sua visita</S.Button>
+      <Modal ButtonText="Agende sua visita" color="white" />
     </S.NavMain>
   </S.NavWrapper>
 )

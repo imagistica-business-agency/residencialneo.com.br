@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Modal from "../../components/Modal"
 
 import * as S from "./styled"
 
@@ -57,8 +58,9 @@ const Plantas = () => {
             </tr>
           </tbody>
         </table>
-
-        <S.Button>Agende sua visita</S.Button>
+        <S.ButtonWrapper>
+          <Modal ButtonText="Agende sua visita" />
+        </S.ButtonWrapper>
       </S.TextWrapper>
       <S.Image fluid={image} />
     </S.PlantasWrapper>

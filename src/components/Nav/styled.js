@@ -80,21 +80,3 @@ export const LinkItem = styled.li`
   `}
   }
 `
-
-export const Button = styled.button`
-  background: transparent;
-  color: white;
-  border: 1px solid white;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: 0.5s;
-
-  &:hover {
-    background: white;
-    color: black;
-  }
-
-  ${media.lessThan("999px")`
-    display: none;
-  `}
-`

@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Modal from "../../components/Modal"
 
 import * as S from "./styled"
 
@@ -28,8 +29,10 @@ const Associados = () => {
           <br />
           <S.Big>305 associados</S.Big>
           <br />
-          <S.Button>Seja associado</S.Button>
         </S.Title>
+        <S.ButtonWrapper>
+          <Modal ButtonText="Seja associado" color="white" />
+        </S.ButtonWrapper>
       </S.Image>
     </S.AssociadosWrapper>
   )
