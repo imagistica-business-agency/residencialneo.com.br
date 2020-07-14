@@ -56,7 +56,7 @@ class Contato extends Component {
           </S.Label>
           <S.Label>
             <span>Telefone</span>
-            <S.Input name="subject" type="text" required />
+            <S.Input name="phone" type="text" required />
           </S.Label>
           <S.Label>
             <span>Email</span>
