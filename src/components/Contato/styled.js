@@ -10,6 +10,7 @@ export const Label = styled.label`
   display: block;
   margin-bottom: 20px;
   color: black;
+  text-rendering: geometricPrecision;
 
   span {
     display: block;

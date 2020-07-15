@@ -35,6 +35,9 @@ export const Button = styled.button`
   background: transparent;
   border: 1px solid black;
   padding: 10px 20px;
+  font-family: inherit;
+  font-size: 16px;
+
   cursor: pointer;
   transition: 0.5s;
 
