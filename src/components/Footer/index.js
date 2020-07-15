@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import Social from "../Social"
 
 import * as S from "./styled"
 import logo from "../../images/logo.svg"
@@ -47,9 +48,14 @@ const Footer = () => (
             </AnchorLink>
           </S.LinkItem>
           <S.LinkItem>
-            <AnchorLink to="#" alt="Downloads">
+            <a
+              href="https://1drv.ms/u/s!AkYph84HdipFajBeVUt6XKCrfWs?e=rU42AB"
+              alt="VR Investimentos"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               Downloads
-            </AnchorLink>
+            </a>
           </S.LinkItem>
         </S.NavLinks>
         <S.VR>
@@ -88,26 +94,10 @@ const Footer = () => (
     </S.FooterMain>
     <S.FooterCopy>
       <S.FooterCopySection>
-        <S.SocialLinks>
-          <a
-            href="https://facebook.com/"
-            alt="Facebook"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <S.FacebookIcon />
-          </a>
-          <a
-            href="https://facebook.com/"
-            alt="Facebook"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <S.InstagramIcon />
-          </a>
-        </S.SocialLinks>
+        <Social />
         <S.Copy>
-          2020 © Residencial NEO. Todos os direitos reservados.
+          {new Date().getFullYear()} © Residencial NEO. Todos os direitos
+          reservados.
           <br /> Desenvolvido por{" "}
           <a
             href="https://www.imagistica.com.br/"

@@ -8,6 +8,21 @@ export const NavWrapper = styled.nav`
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 100;
 
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    ${media.lessThan("1005px")`
+      font-size: 12px;
+    `}
+  }
+
   ${media.lessThan("960px")`
     height: 60px;
   `}
@@ -63,20 +78,5 @@ export const LinkItem = styled.li`
 
   ${media.lessThan("960px")`
       padding-top: 3px;
-    `}
-
-  a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    ${media.lessThan("768px")`
-      font-size: 12px;
   `}
-  }
 `

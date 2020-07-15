@@ -1,9 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
-import { FacebookCircle as Facebook } from "@styled-icons/boxicons-logos/FacebookCircle"
-import { InstagramWithCircle as Instagram } from "@styled-icons/entypo-social/InstagramWithCircle"
-
 export const FooterWrapper = styled.footer`
   color: #fff;
   font-size: 16px;
@@ -72,7 +69,7 @@ export const FooterCopy = styled.div`
 
 export const FooterCopySection = styled.div`
   display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-columns: 2fr 10fr 1fr;
   gap: 30px;
   padding: 40px 30px 30px;
   max-width: 1640px;
@@ -84,20 +81,6 @@ export const FooterCopySection = styled.div`
     grid-template-columns: 1fr 11fr;
     padding-bottom: 0;
   `}
-`
-
-export const SocialLinks = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-`
-
-export const FacebookIcon = styled(Facebook)`
-  width: 40px;
-`
-
-export const InstagramIcon = styled(Instagram)`
-  width: 34px;
-  margin-top: 2px;
 `
 
 export const Copy = styled.div`

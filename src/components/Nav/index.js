@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Modal from "../../components/Modal"
+import Social from "../Social"
 
 import * as S from "./styled"
 import logo from "../../images/logo.svg"
@@ -45,12 +46,17 @@ const Nav = () => (
           </AnchorLink>
         </S.LinkItem>
         <S.LinkItem>
-          <AnchorLink to="#" alt="Downloads">
+          <a
+            href="https://1drv.ms/u/s!AkYph84HdipFajBeVUt6XKCrfWs?e=rU42AB"
+            alt="VR Investimentos"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Downloads
-          </AnchorLink>
+          </a>
         </S.LinkItem>
       </S.NavLinks>
-      <Modal ButtonText="Agende sua visita" color="white" />
+      <Social />
     </S.NavMain>
   </S.NavWrapper>
 )
