@@ -39,8 +39,14 @@ const Diferenciais = () => {
           Possuímos know-how técnico, financeiro, jurídico e administrativo de
           mais de uma década.
         </p>
-
-        <S.Button>Assista ao vídeo</S.Button>
+        <a
+          href="https://www.youtube.com/watch?v=rPlI1AsOxdc"
+          alt="Vídeo"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <S.Button>Assista ao vídeo</S.Button>
+        </a>
       </S.TextWrapper>
       <S.Image fluid={image} />
     </S.DiferenciaisWrapper>
