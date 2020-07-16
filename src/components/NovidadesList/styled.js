@@ -8,7 +8,7 @@ import { RightArrowAlt as Arrow } from "@styled-icons/boxicons-regular/RightArro
 export const NovidadesListWrapper = styled.section`
   max-width: 1640px;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 12px;
 
   ${media.lessThan("640px")`
     padding: 0;
@@ -50,7 +50,7 @@ export const BlogItemImage = styled(Img)`
 `
 
 export const BlogItemTitle = styled.h5`
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   margin: 16px 0;
 `
@@ -60,5 +60,5 @@ export const BlogItemDescription = styled.div`
 `
 
 export const ArrowIcon = styled(Arrow)`
-  width: 20px;
+  width: 16px;
 `

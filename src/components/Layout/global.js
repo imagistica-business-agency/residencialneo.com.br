@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
 
     ${media.lessThan("1200px")`
@@ -23,11 +23,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 40px;
 
     span.small {
-      font-size: 25px;
+      font-size: 20px;
 
       ${media.lessThan("1200px")`
         font-size: 16px;

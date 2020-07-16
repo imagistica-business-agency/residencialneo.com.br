@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import Modal from "../../components/Modal"
 import Social from "../Social"
 
 import * as S from "./styled"

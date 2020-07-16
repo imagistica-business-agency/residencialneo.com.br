@@ -24,9 +24,9 @@ const Social = () => (
     <Link to="/">
       <S.WhatsappIcon />
     </Link>
-    <Link to="/">
+    {/* <Link to="/">
       <S.MailIcon />
-    </Link>
+    </Link> */}
   </S.SocialLinks>
 )
 

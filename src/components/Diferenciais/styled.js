@@ -34,6 +34,8 @@ export const Button = styled.button`
   margin-top: 40px;
   cursor: pointer;
   transition: 0.5s;
+  font-family: inherit;
+  font-size: 14px;
 
   &:hover {
     background: black;

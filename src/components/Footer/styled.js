@@ -3,7 +3,7 @@ import media from "styled-media-query"
 
 export const FooterWrapper = styled.footer`
   color: #fff;
-  font-size: 16px;
+  font-size: 12px;
 
   a {
     color: #fff;
@@ -24,7 +24,7 @@ export const FooterMainSection = styled.div`
   grid-template-columns: 4fr 2fr 3fr 3fr;
   gap: 30px;
   padding: 100px 30px 90px;
-  max-width: 1640px;
+  max-width: 1340px;
   margin: 0 auto;
 
   ${media.lessThan("910px")`
@@ -69,13 +69,13 @@ export const FooterCopy = styled.div`
 
 export const FooterCopySection = styled.div`
   display: grid;
-  grid-template-columns: 2fr 10fr 1fr;
+  grid-template-columns: 1fr 10fr 1fr;
   gap: 30px;
   padding: 40px 30px 30px;
-  max-width: 1640px;
+  max-width: 1340px;
   margin: 0 auto;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
 
   ${media.lessThan("600px")`
     grid-template-columns: 1fr 11fr;

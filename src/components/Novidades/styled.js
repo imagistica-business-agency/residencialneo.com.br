@@ -3,7 +3,7 @@ import media from "styled-media-query"
 
 export const NovidadesWrapper = styled.section`
   padding: 100px 30px;
-  max-width: 1640px;
+  max-width: 1340px;
   margin: 0 auto;
   font-size: 16px;
 

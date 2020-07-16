@@ -11,18 +11,18 @@ export const SocialLinks = styled.div`
 `
 
 export const FacebookIcon = styled(Facebook)`
-  width: 40px;
+  width: 30px;
   margin-right: 5px;
 `
 
 export const InstagramIcon = styled(Instagram)`
-  width: 34px;
+  width: 26px;
   margin-top: 2px;
   margin-right: 5px;
 `
 
 export const WhatsappIcon = styled(Whatsapp)`
-  width: 40px;
+  width: 30px;
   margin-right: 5px;
 `
 
