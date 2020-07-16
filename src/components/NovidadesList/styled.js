@@ -43,6 +43,7 @@ export const BlogItemLink = styled(Link)`
 export const BlogItemImage = styled(Img)`
   width: 100%;
   height: 350px;
+  z-index: -100;
 
   ${media.lessThan("1200px")`
     height: 250px;

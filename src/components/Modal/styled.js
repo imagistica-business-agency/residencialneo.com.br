@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const Main = styled.main`
   .modal {
@@ -9,6 +10,7 @@ export const Main = styled.main`
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     z-index: 999;
+    text-align: left;
 
     .modal-main {
       position: fixed;
@@ -19,6 +21,9 @@ export const Main = styled.main`
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      ${media.lessThan("768px")`
+        width: 100%;
+      `}
     }
   }
 
@@ -60,6 +65,5 @@ export const Button = styled.button`
 export const CloseButton = styled.img`
   width: 15px;
   margin-bottom: 20px;
-  text-align: left;
   cursor: pointer;
 `
