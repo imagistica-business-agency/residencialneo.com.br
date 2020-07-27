@@ -22,7 +22,7 @@ export const PlantaTabList = styled(TabList)`
 export const PlantaTab = styled(Tab)`
   background: transparent;
   border: 1px solid black;
-  padding: 10px 60px;
+  padding: 10px 50px;
   margin-right: 20px;
   font-family: inherit;
   font-size: 14px;
