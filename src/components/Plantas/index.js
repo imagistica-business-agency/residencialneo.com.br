@@ -74,6 +74,9 @@ const Plantas = () => {
                 </tr>
               </tbody>
             </table>
+            <S.ButtonWrapper>
+              <Modal ButtonText="Agende sua visita" />
+            </S.ButtonWrapper>
           </S.TextWrapper>
           <S.Image fluid={firstImage} />
         </S.PlantaTabPanel>
@@ -112,13 +115,13 @@ const Plantas = () => {
                 </tr>
               </tbody>
             </table>
+            <S.ButtonWrapper>
+              <Modal ButtonText="Agende sua visita" />
+            </S.ButtonWrapper>
           </S.TextWrapper>
           <S.Image fluid={secondImage} />
         </S.PlantaTabPanel>
       </S.PlantaTabs>
-      <S.ButtonWrapper>
-        <Modal ButtonText="Agende sua visita" />
-      </S.ButtonWrapper>
     </S.PlantasWrapper>
   )
 }

@@ -66,4 +66,11 @@ export const ButtonWrapper = styled.div`
   margin-top: 40px;
 `
 
-export const Image = styled(Img)``
+export const Image = styled(Img)`
+  picture > img {
+    height: auto !important;
+  }
+  > img {
+    height: auto !important;
+  }
+`
