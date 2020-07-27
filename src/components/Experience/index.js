@@ -10,7 +10,7 @@ const Experience = () => {
       query {
         experience: file(relativePath: { eq: "experience.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 960, quality: 80) {
+            fluid(maxWidth: 1400, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
