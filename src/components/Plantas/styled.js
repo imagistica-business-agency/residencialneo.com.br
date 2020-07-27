@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import BackgroundImage from "gatsby-background-image"
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 
 export const PlantasWrapper = styled.section`
   display: grid;
@@ -11,6 +11,14 @@ export const PlantasWrapper = styled.section`
   `}
 `
 
+export const PlantaTab = styled(Tab)``
+
+export const PlantaTabs = styled(Tabs)``
+
+export const PlantaTabList = styled(TabList)``
+
+export const PlantaTabPanel = styled(TabPanel)``
+
 export const TextWrapper = styled.div`
   margin: 80px 10%;
 `
@@ -19,8 +27,4 @@ export const ButtonWrapper = styled.div`
   margin-top: 40px;
 `
 
-export const Image = styled(BackgroundImage)`
-  ${media.lessThan("890px")`
-    height: 200px;
-  `}
-`
+export const Image = styled.img``

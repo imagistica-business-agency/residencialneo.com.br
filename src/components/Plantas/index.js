@@ -62,7 +62,7 @@ const Plantas = () => {
           <Modal ButtonText="Agende sua visita" />
         </S.ButtonWrapper>
       </S.TextWrapper>
-      <S.Image fluid={image} />
+      <S.Image src="../../images/63m.jpg" />
     </S.PlantasWrapper>
   )
 }
