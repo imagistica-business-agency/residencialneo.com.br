@@ -7,9 +7,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        id: "GTM-MK63KVZ",
+        trackingIds: ["UA-169276386-2", "AW-652130214"],
+        pluginConfig: {
+          head: false,
+        },
       },
     },
     {
