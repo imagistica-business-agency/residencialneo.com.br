@@ -81,7 +81,7 @@ const Experience = () => {
         </p>
 
         <S.ButtonWrapper>
-          <Modal ButtonText="Consultar investimentos" />
+          <Modal id="modal" ButtonText="Consultar investimentos" />
         </S.ButtonWrapper>
       </S.TextWrapper>
       <S.Image fluid={image} />

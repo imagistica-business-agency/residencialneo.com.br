@@ -31,7 +31,7 @@ const Associados = () => {
           <br />
         </S.Title>
         <S.ButtonWrapper>
-          <Modal ButtonText="Seja associado" color="white" />
+          <Modal id="modal" ButtonText="Seja associado" color="white" />
         </S.ButtonWrapper>
       </S.Image>
     </S.AssociadosWrapper>

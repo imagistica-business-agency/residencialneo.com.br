@@ -71,7 +71,7 @@ class Contato extends Component {
             <S.Textarea name="message" />
           </S.Label>
 
-          <S.Button type="submit">Enviar</S.Button>
+          <S.Button type="submit" id="contact">Enviar</S.Button>
           <div>
             {message ? (
               <div className="notification" role="alert">

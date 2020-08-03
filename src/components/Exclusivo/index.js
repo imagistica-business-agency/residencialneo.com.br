@@ -57,7 +57,11 @@ const Exclusivo = () => {
         </p>
 
         <S.ButtonWrapper>
-          <Modal ButtonText="Verificar disponibilidade" color="white" />
+          <Modal
+            id="modal"
+            ButtonText="Verificar disponibilidade"
+            color="white"
+          />
         </S.ButtonWrapper>
       </S.TextWrapper>
     </S.ExperienceWrapper>
