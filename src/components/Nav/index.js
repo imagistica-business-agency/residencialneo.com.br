@@ -45,14 +45,9 @@ const Nav = () => (
           </AnchorLink>
         </S.LinkItem>
         <S.LinkItem>
-          <a
-            href="https://1drv.ms/u/s!AkYph84HdipFajBeVUt6XKCrfWs?e=rU42AB"
-            alt="VR Investimentos"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
+          <AnchorLink to="/downloads#downloads" alt="Downloads" stripHash>
             Downloads
-          </a>
+          </AnchorLink>
         </S.LinkItem>
       </S.NavLinks>
       <Social />
