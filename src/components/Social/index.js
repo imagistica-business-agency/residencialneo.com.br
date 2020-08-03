@@ -1,5 +1,4 @@
 import React from "react"
-import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import * as S from "./styled"
 
@@ -21,13 +20,13 @@ const Social = () => (
     >
       <S.InstagramIcon />
     </a>
-    <OutboundLink
+    <a
       href="https://wa.me/554599138889"
       rel="noopener noreferrer"
       target="_blank"
     >
       <S.WhatsappIcon />
-    </OutboundLink>
+    </a>
     {/* <Link to="/">
       <S.MailIcon />
     </Link> */}
