@@ -9,6 +9,7 @@ import Experience from '../components/Experience'
 import Exclusivo from '../components/Exclusivo'
 import Diferenciais from '../components/Diferenciais'
 import Associados from '../components/Associados'
+import Empreendimentos from '../components/Empreendimentos'
 import Novidades from '../components/Novidades'
 
 const IndexPage = () => (
@@ -21,6 +22,7 @@ const IndexPage = () => (
     <Exclusivo />
     <Diferenciais />
     <Associados />
+    <Empreendimentos />
     <Novidades />
   </Layout>
 )
