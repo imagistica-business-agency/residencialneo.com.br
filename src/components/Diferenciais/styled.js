@@ -12,7 +12,7 @@ export const DiferenciaisWrapper = styled.section`
 `
 
 export const TextWrapper = styled.div`
-  margin: 280px 10%;
+  margin: 100px 10%;
 
   ${media.lessThan('1200px')`
     margin: 180px 10%;
