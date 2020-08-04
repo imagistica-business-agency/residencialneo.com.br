@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Modal from "../../components/Modal"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Modal from '../../components/Modal'
 
-import * as S from "./styled"
+import * as S from './styled'
 
 const Plantas = () => {
   const data = useStaticQuery(
@@ -42,35 +42,35 @@ const Plantas = () => {
 
         <S.PlantaTabPanel>
           <S.TextWrapper>
-            <table style={{ width: "100%" }}>
+            <table style={{ width: '100%' }}>
               <tbody>
                 <tr>
                   <td>ÁREA PRIVATIVA</td>
-                  <td style={{ textAlign: "right" }}>63,38m2</td>
+                  <td style={{ textAlign: 'right' }}>63,38m2</td>
                 </tr>
                 <tr>
                   <td>ÁREA GARAGEM</td>
-                  <td style={{ textAlign: "right" }}>66,52m2</td>
+                  <td style={{ textAlign: 'right' }}>66,52m2</td>
                 </tr>
                 <tr>
                   <td>ÁREA TOTAL</td>
-                  <td style={{ textAlign: "right" }}>129,90m2</td>
+                  <td style={{ textAlign: 'right' }}>129,90m2</td>
                 </tr>
                 <tr>
                   <td>SUÍTE</td>
-                  <td style={{ textAlign: "right" }}>SIM</td>
+                  <td style={{ textAlign: 'right' }}>SIM</td>
                 </tr>
                 <tr>
                   <td>QUARTOS</td>
-                  <td style={{ textAlign: "right" }}>2</td>
+                  <td style={{ textAlign: 'right' }}>2</td>
                 </tr>
                 <tr>
                   <td>VARANDA</td>
-                  <td style={{ textAlign: "right" }}>SIM</td>
+                  <td style={{ textAlign: 'right' }}>SIM</td>
                 </tr>
                 <tr>
                   <td>VAGA DE GARAGEM</td>
-                  <td style={{ textAlign: "right" }}>SIM</td>
+                  <td style={{ textAlign: 'right' }}>SIM</td>
                 </tr>
               </tbody>
             </table>
@@ -83,35 +83,35 @@ const Plantas = () => {
 
         <S.PlantaTabPanel>
           <S.TextWrapper>
-            <table style={{ width: "100%" }}>
+            <table style={{ width: '100%' }}>
               <tbody>
                 <tr>
                   <td>ÁREA PRIVATIVA</td>
-                  <td style={{ textAlign: "right" }}>74,1m2</td>
+                  <td style={{ textAlign: 'right' }}>74,1m2</td>
                 </tr>
                 <tr>
                   <td>ÁREA GARAGEM</td>
-                  <td style={{ textAlign: "right" }}>67,47m2</td>
+                  <td style={{ textAlign: 'right' }}>67,47m2</td>
                 </tr>
                 <tr>
                   <td>ÁREA TOTAL</td>
-                  <td style={{ textAlign: "right" }}>141,58m2</td>
+                  <td style={{ textAlign: 'right' }}>141,58m2</td>
                 </tr>
                 <tr>
                   <td>SUÍTE</td>
-                  <td style={{ textAlign: "right" }}>SIM</td>
+                  <td style={{ textAlign: 'right' }}>SIM</td>
                 </tr>
                 <tr>
                   <td>QUARTOS</td>
-                  <td style={{ textAlign: "right" }}>2</td>
+                  <td style={{ textAlign: 'right' }}>2</td>
                 </tr>
                 <tr>
                   <td>VARANDA</td>
-                  <td style={{ textAlign: "right" }}>SIM</td>
+                  <td style={{ textAlign: 'right' }}>SIM</td>
                 </tr>
                 <tr>
                   <td>VAGA DE GARAGEM</td>
-                  <td style={{ textAlign: "right" }}>SIM</td>
+                  <td style={{ textAlign: 'right' }}>SIM</td>
                 </tr>
               </tbody>
             </table>

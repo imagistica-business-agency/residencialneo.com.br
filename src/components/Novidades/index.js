@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react'
 
-import NovidadesList from "../NovidadesList"
+import NovidadesList from '../NovidadesList'
 
-import * as S from "./styled"
+import * as S from './styled'
 
 const Novidades = () => (
   <S.NovidadesWrapper id="novidades">

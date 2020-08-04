@@ -1,9 +1,9 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-import { FacebookCircle as Facebook } from "@styled-icons/boxicons-logos/FacebookCircle"
-import { InstagramWithCircle as Instagram } from "@styled-icons/entypo-social/InstagramWithCircle"
-import { Whatsapp } from "@styled-icons/remix-fill/Whatsapp"
-import { MailWithCircle as Mail } from "@styled-icons/entypo-social/MailWithCircle"
+import { FacebookCircle as Facebook } from '@styled-icons/boxicons-logos/FacebookCircle'
+import { InstagramWithCircle as Instagram } from '@styled-icons/entypo-social/InstagramWithCircle'
+import { Whatsapp } from '@styled-icons/remix-fill/Whatsapp'
+import { MailWithCircle as Mail } from '@styled-icons/entypo-social/MailWithCircle'
 
 export const SocialLinks = styled.div`
   display: flex;

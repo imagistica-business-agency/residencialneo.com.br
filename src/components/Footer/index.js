@@ -1,11 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
-import Social from "../Social"
+import React from 'react'
+import { Link } from 'gatsby'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import Social from '../Social'
 
-import * as S from "./styled"
-import logo from "../../images/logo.svg"
-import VRLogo from "../../images/VRLogo.svg"
+import * as S from './styled'
+import logo from '../../images/logo.svg'
+import VRLogo from '../../images/VRLogo.svg'
 
 const Footer = () => (
   <S.FooterWrapper>
@@ -61,7 +61,7 @@ const Footer = () => (
         <S.VR>
           <S.VRTitle>Grupo VR Investimentos</S.VRTitle>
           <p>
-            A{" "}
+            A{' '}
             <a
               href="http://valorrealinvest.com.br/"
               alt="VR Investimentos"
@@ -69,7 +69,7 @@ const Footer = () => (
               target="_blank"
             >
               VR Investimentos
-            </a>{" "}
+            </a>{' '}
             tem as melhores oportunidades de investimentos imobiliários no oeste
             do Paraná.
           </p>
@@ -98,7 +98,7 @@ const Footer = () => (
         <S.Copy>
           {new Date().getFullYear()} © Residencial NEO. Todos os direitos
           reservados.
-          <br /> Desenvolvido por{" "}
+          <br /> Desenvolvido por{' '}
           <a
             href="https://www.imagistica.com.br/"
             alt="Imagística Business Agency"

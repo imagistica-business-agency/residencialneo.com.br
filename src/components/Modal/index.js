@@ -1,9 +1,9 @@
-import React, { Component } from "react"
+import React, { Component } from 'react'
 
-import Contato from "../Contato"
+import Contato from '../Contato'
 
-import * as S from "./styled"
-import Close from "../../images/close.svg"
+import * as S from './styled'
+import Close from '../../images/close.svg'
 
 class ModalContact extends Component {
   state = { show: false }
@@ -35,7 +35,7 @@ class ModalContact extends Component {
 }
 
 const Modal = ({ handleClose, show, children }) => {
-  const showHideClassName = show ? "modal display-block" : "modal display-none"
+  const showHideClassName = show ? 'modal display-block' : 'modal display-none'
 
   return (
     <div className={showHideClassName}>

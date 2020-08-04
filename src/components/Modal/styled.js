@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import media from "styled-media-query"
+import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const Main = styled.main`
   .modal {
@@ -21,7 +21,7 @@ export const Main = styled.main`
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      ${media.lessThan("768px")`
+      ${media.lessThan('768px')`
         width: 100%;
       `}
     }

@@ -1,41 +1,41 @@
-const Mailgun = require("mailgun-js")
+const Mailgun = require('mailgun-js')
 
 const sendEmail = async ({ name, subject, phone, email, city, message }) => {
   return new Promise((resolve, reject) => {
-    console.log("Sending the email")
+    console.log('Sending the email')
     const {
       MAILGUN_API_KEY: apiKey,
       MAILGUN_DOMAIN: domain,
       EMAIL_FROM: emailFrom,
-      EMAIL_TO: emailTo,
+      EMAIL_TO: emailTo
     } = process.env
     const mailgun = Mailgun({
       apiKey,
-      domain,
+      domain
     })
 
     const emailBody =
       `Nome: ${name}` +
-      "<br>" +
+      '<br>' +
       `Email: ${email}` +
-      "<br>" +
+      '<br>' +
       `Telefone: ${phone}` +
-      "<br>" +
+      '<br>' +
       `Assunto: ${subject}` +
-      "<br>" +
+      '<br>' +
       `Cidade: ${city}` +
-      "<br>" +
+      '<br>' +
       `${message}`
 
     const mailData = {
       from: emailFrom,
       to: emailTo,
-      subject: "Formulário de contato do site",
-      "h:Reply-To": `${name} <${email}>`,
-      html: emailBody,
+      subject: 'Formulário de contato do site',
+      'h:Reply-To': `${name} <${email}>`,
+      html: emailBody
     }
 
-    mailgun.messages().send(mailData, (err) => {
+    mailgun.messages().send(mailData, err => {
       if (err) return reject(err)
 
       resolve()
@@ -43,7 +43,7 @@ const sendEmail = async ({ name, subject, phone, email, city, message }) => {
   })
 }
 
-exports.handler = async (event) => {
+exports.handler = async event => {
   try {
     const data = JSON.parse(event.body)
 
@@ -52,14 +52,14 @@ exports.handler = async (event) => {
     return {
       statusCode: 200,
       body: JSON.stringify({
-        message: "Mensagem enviada com sucesso.",
-      }),
+        message: 'Mensagem enviada com sucesso.'
+      })
     }
   } catch (e) {
     console.log(e)
     return {
       statusCode: 500,
-      body: e.message,
+      body: e.message
     }
   }
 }

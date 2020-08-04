@@ -1,10 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
-import Social from "../Social"
+import React from 'react'
+import { Link } from 'gatsby'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import Social from '../Social'
 
-import * as S from "./styled"
-import logo from "../../images/logo.svg"
+import * as S from './styled'
+import logo from '../../images/logo.svg'
 
 const Nav = () => (
   <S.NavWrapper>

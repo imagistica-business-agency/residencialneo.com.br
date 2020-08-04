@@ -1,13 +1,13 @@
-import React, { Component } from "react"
+import React, { Component } from 'react'
 
-import * as S from "./styled"
+import * as S from './styled'
 
 class Contato extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      message: null,
+      message: null
     }
   }
   async handleSubmit(event) {
@@ -19,20 +19,20 @@ class Contato extends Component {
       phone: form.phone.value,
       email: form.email.value,
       city: form.city.value,
-      message: form.message.value,
+      message: form.message.value
     }
 
     const response = await (
       await fetch(form.action, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-type": "application/json",
+          'Content-type': 'application/json'
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(data)
       })
     ).json()
     this.setState({
-      message: response.message,
+      message: response.message
     })
     console.log(response)
   }
@@ -71,14 +71,16 @@ class Contato extends Component {
             <S.Textarea name="message" />
           </S.Label>
 
-          <S.Button type="submit" id="contact">Enviar</S.Button>
+          <S.Button type="submit" id="contact">
+            Enviar
+          </S.Button>
           <div>
             {message ? (
               <div className="notification" role="alert">
                 {message}
               </div>
             ) : (
-              ""
+              ''
             )}
           </div>
         </form>

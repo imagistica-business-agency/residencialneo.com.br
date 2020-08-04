@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const FormWrapper = styled.div`
   font-size: 12px;

@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import media from "styled-media-query"
+import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const NovidadesWrapper = styled.section`
   padding: 100px 30px;
@@ -7,7 +7,7 @@ export const NovidadesWrapper = styled.section`
   margin: 0 auto;
   font-size: 16px;
 
-  ${media.lessThan("640px")`
+  ${media.lessThan('640px')`
     padding: 80px 20px;
   `}
 `

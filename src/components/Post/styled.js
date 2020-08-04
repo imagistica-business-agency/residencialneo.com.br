@@ -1,11 +1,11 @@
-import styled from "styled-components"
-import media from "styled-media-query"
-import BackgroundImage from "gatsby-background-image"
+import styled from 'styled-components'
+import media from 'styled-media-query'
+import BackgroundImage from 'gatsby-background-image'
 
 export const Header = styled(BackgroundImage)`
   padding: 290px 15% 250px;
 
-  ${media.lessThan("600px")`
+  ${media.lessThan('600px')`
     padding: 190px 15% 150px;
   `}
 `
@@ -16,7 +16,7 @@ export const Title = styled.h1`
   text-align: center;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 
-  ${media.lessThan("600px")`
+  ${media.lessThan('600px')`
     font-size: 26px;
   `}
 `
@@ -54,17 +54,17 @@ export const PostWrapper = styled.div`
     margin-left: 320px;
     margin-right: 320px;
 
-    ${media.lessThan("1500px")`
+    ${media.lessThan('1500px')`
       margin-left: 200px;
       margin-right: 200px;
     `}
 
-    ${media.lessThan("1100px")`
+    ${media.lessThan('1100px')`
       margin-left: 100px;
       margin-right: 100px;
     `}
 
-    ${media.lessThan("770px")`
+    ${media.lessThan('770px')`
       margin-left: 40px;
       margin-right: 40px;
     `}
@@ -74,7 +74,7 @@ export const PostWrapper = styled.div`
     display: none;
   }
 
-  ${media.lessThan("600px")`
+  ${media.lessThan('600px')`
     padding: 80px 0;
 
     h2,

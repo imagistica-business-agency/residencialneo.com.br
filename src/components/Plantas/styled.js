@@ -1,12 +1,12 @@
-import styled from "styled-components"
-import media from "styled-media-query"
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
-import Img from "gatsby-image"
+import styled from 'styled-components'
+import media from 'styled-media-query'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import Img from 'gatsby-image'
 
 export const PlantasWrapper = styled.section`
   margin: 80px 10%;
 
-  ${media.lessThan("890px")`
+  ${media.lessThan('890px')`
     grid-template-columns: 1fr;
   `}
 `
@@ -55,7 +55,7 @@ export const PlantaTabPanel = styled(TabPanel)`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  ${media.lessThan("890px")`
+  ${media.lessThan('890px')`
     grid-template-columns: 1fr;
   `}
 `

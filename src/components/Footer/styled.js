@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import media from "styled-media-query"
+import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const FooterWrapper = styled.footer`
   color: #fff;
@@ -27,18 +27,18 @@ export const FooterMainSection = styled.div`
   max-width: 1340px;
   margin: 0 auto;
 
-  ${media.lessThan("910px")`
+  ${media.lessThan('910px')`
     grid-template-columns: 1fr 1fr;
   `}
 
-  ${media.lessThan("640px")`
+  ${media.lessThan('640px')`
     padding: 80px 20px;
     grid-template-columns: 1fr;
   `}
 `
 
 export const Logo = styled.div`
-  ${media.lessThan("640px")`
+  ${media.lessThan('640px')`
     display: none;
   `}
 `
@@ -77,7 +77,7 @@ export const FooterCopySection = styled.div`
   text-transform: uppercase;
   font-size: 10px;
 
-  ${media.lessThan("600px")`
+  ${media.lessThan('600px')`
     grid-template-columns: 1fr 11fr;
     padding-bottom: 0;
   `}
@@ -94,7 +94,7 @@ export const Copy = styled.div`
 export const VRLogo = styled.img`
   max-width: 40px;
 
-  ${media.lessThan("600px")`
+  ${media.lessThan('600px')`
     display: none;
   `}
 `

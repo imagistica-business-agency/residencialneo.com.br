@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const SubHeaderWrapper = styled.section`
   display: grid;
@@ -11,7 +11,7 @@ export const Image = styled.div``
 
 export const Text = styled.div`
   padding: 100px 20%;
-  font-family: "Krona one";
+  font-family: 'Krona one';
   text-align: center;
   color: white;
 `

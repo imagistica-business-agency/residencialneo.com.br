@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components"
-import media from "styled-media-query"
+import { createGlobalStyle } from 'styled-components'
+import media from 'styled-media-query'
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     line-height: 1.5;
 
-    ${media.lessThan("1200px")`
+    ${media.lessThan('1200px')`
       font-size: 16px;
     `}
   }
@@ -29,12 +29,12 @@ const GlobalStyles = createGlobalStyle`
     span.small {
       font-size: 20px;
 
-      ${media.lessThan("1200px")`
+      ${media.lessThan('1200px')`
         font-size: 16px;
       `}
     }
 
-    ${media.lessThan("1200px")`
+    ${media.lessThan('1200px')`
       font-size: 22px;
     `}
   }
@@ -46,6 +46,11 @@ const GlobalStyles = createGlobalStyle`
   td {
     height: 50px;
     border-bottom: 1px solid #c0c0c0;
+  }
+
+  .video, iframe {
+    width: 100%;
+    max-height: 400px;
   }
 `
 

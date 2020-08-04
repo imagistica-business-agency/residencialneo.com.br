@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import media from "styled-media-query"
+import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const DownloadsWrapper = styled.main`
   padding: 100px 30px;
@@ -30,7 +30,7 @@ export const DownloadsWrapper = styled.main`
     }
   }
 
-  ${media.lessThan("640px")`
+  ${media.lessThan('640px')`
     padding: 80px 20px;
   `}
 `

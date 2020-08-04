@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Modal from "../../components/Modal"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Modal from '../../components/Modal'
 
-import * as S from "./styled"
+import * as S from './styled'
 
 const Associados = () => {
   const { bannerAssociados } = useStaticQuery(

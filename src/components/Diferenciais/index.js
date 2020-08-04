@@ -1,7 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import * as S from "./styled"
+import Video from '../Video'
+import * as S from './styled'
 
 const Diferenciais = () => {
   const { diferenciais } = useStaticQuery(
@@ -39,14 +40,19 @@ const Diferenciais = () => {
           Possuímos know-how técnico, financeiro, jurídico e administrativo de
           mais de uma década.
         </p>
-        <a
+        {/* <a
           href="https://www.youtube.com/watch?v=rPlI1AsOxdc"
           alt="Vídeo"
           rel="noopener noreferrer"
           target="_blank"
         >
           <S.Button>Assista ao vídeo</S.Button>
-        </a>
+        </a> */}
+
+        <Video
+          videoSrcURL="https://www.youtube.com/embed/rPlI1AsOxdc"
+          videoTitle="Conheça o Residencial Neo"
+        />
       </S.TextWrapper>
       <S.Image fluid={image} />
     </S.DiferenciaisWrapper>

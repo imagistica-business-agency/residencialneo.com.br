@@ -1,16 +1,16 @@
-import styled from "styled-components"
-import media from "styled-media-query"
-import { Link } from "gatsby"
-import Img from "gatsby-image"
+import styled from 'styled-components'
+import media from 'styled-media-query'
+import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 
-import { RightArrowAlt as Arrow } from "@styled-icons/boxicons-regular/RightArrowAlt"
+import { RightArrowAlt as Arrow } from '@styled-icons/boxicons-regular/RightArrowAlt'
 
 export const NovidadesListWrapper = styled.section`
   max-width: 1640px;
   margin: 0 auto;
   font-size: 12px;
 
-  ${media.lessThan("640px")`
+  ${media.lessThan('640px')`
     padding: 0;
   `}
 `
@@ -20,11 +20,11 @@ export const BlogList = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
 
-  ${media.lessThan("910px")`
+  ${media.lessThan('910px')`
     grid-template-columns: 1fr 1fr;
   `}
 
-  ${media.lessThan("640px")`
+  ${media.lessThan('640px')`
     grid-template-columns: 1fr;
   `}
 `
@@ -45,7 +45,7 @@ export const BlogItemImage = styled(Img)`
   height: 350px;
   z-index: -100;
 
-  ${media.lessThan("1200px")`
+  ${media.lessThan('1200px')`
     height: 250px;
   `}
 `
