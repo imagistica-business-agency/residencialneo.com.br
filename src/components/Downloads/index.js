@@ -13,7 +13,7 @@ const Downloads = () => (
         </a>
       </li>
       <li>
-        <a href="" alt="Tabela de adesão" target="_blank">
+        <a href="disponibilidade.pptx" alt="Tabela de adesão" target="_blank">
           Tabela de adesão
         </a>
       </li>
