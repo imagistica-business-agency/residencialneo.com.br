@@ -44,7 +44,7 @@ const Diferenciais = () => {
           Possuímos know-how técnico, financeiro, jurídico e administrativo de
           mais de uma década.
         </p>
-        <Link to="downloads">
+        <Link to="/downloads#downloads">
           <S.Button>Downloads</S.Button>
         </Link>
       </S.TextWrapper>
