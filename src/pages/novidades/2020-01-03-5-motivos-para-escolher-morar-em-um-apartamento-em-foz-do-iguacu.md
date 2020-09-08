@@ -1,7 +1,7 @@
 ---
 templateKey: blogPost
 date: 2020-07-03 19:14:00
-title: 5 motivos para escolher morar em um apartamento
+title: 5 motivos para escolher morar em um apartamento em Foz do Iguaçu
 description: Você sabia que muitas vezes morar em apartamento é melhor do que morar em casa? É isso mesmo. Ao contrário do que muitas pessoas acreditam, o apartamento é capaz de oferecer muitas opções que as casas não oferecem e, além disso, o custo benefício acaba sendo muito melhor.
 image: /images/apartamento.jpg
 tags: lorem, ipsum

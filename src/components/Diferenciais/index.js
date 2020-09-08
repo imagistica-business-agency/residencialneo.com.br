@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 
 import Video from '../Video'
 import * as S from './styled'
@@ -24,6 +24,10 @@ const Diferenciais = () => {
   return (
     <S.DiferenciaisWrapper id="diferenciais">
       <S.TextWrapper>
+        <Video
+          videoSrcURL="https://www.youtube.com/embed/rPlI1AsOxdc"
+          videoTitle="Conheça o Residencial Neo"
+        />
         <h2>
           <span className="small">Diferenciais e vantagens</span>
           <br />
@@ -40,19 +44,9 @@ const Diferenciais = () => {
           Possuímos know-how técnico, financeiro, jurídico e administrativo de
           mais de uma década.
         </p>
-        {/* <a
-          href="https://www.youtube.com/watch?v=rPlI1AsOxdc"
-          alt="Vídeo"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <S.Button>Assista ao vídeo</S.Button>
-        </a> */}
-
-        <Video
-          videoSrcURL="https://www.youtube.com/embed/rPlI1AsOxdc"
-          videoTitle="Conheça o Residencial Neo"
-        />
+        <Link to="downloads">
+          <S.Button>Downloads</S.Button>
+        </Link>
       </S.TextWrapper>
       <S.Image fluid={image} />
     </S.DiferenciaisWrapper>

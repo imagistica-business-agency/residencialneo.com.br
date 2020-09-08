@@ -74,6 +74,8 @@ const Empreendimentos = () => {
         <span className="small">Empreendimentos</span>
         <br />
         VR Investimentos
+        <br />
+        <span className="small">em Foz do Iguaçu</span>
       </h2>
       <S.Container>
         <S.EmpreendimentoWrapper>

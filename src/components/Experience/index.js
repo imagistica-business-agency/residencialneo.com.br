@@ -28,6 +28,8 @@ const Experience = () => {
           <span className="small">Experience</span>
           <br />
           Essa nova realidade
+          <br />
+          <span className="small">em Foz do Iguaçu</span>
         </h2>
 
         <p>

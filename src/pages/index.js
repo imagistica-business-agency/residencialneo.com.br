@@ -17,10 +17,10 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Header />
     {/* <SubHeader /> */}
+    <Diferenciais />
     <Plantas />
     <Experience />
     <Exclusivo />
-    <Diferenciais />
     <Associados />
     <Empreendimentos />
     <Novidades />

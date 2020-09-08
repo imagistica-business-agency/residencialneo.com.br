@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import Img from 'gatsby-image'
 
 export const PlantasWrapper = styled.section`
-  margin: 80px 10%;
+  margin: 80px 5%;
 
   ${media.lessThan('890px')`
     grid-template-columns: 1fr;
@@ -53,7 +53,8 @@ export const PlantaTab = styled(Tab)`
 
 export const PlantaTabPanel = styled(TabPanel)`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr;
+  gap: 2rem;
 
   ${media.lessThan('890px')`
     grid-template-columns: 1fr;
