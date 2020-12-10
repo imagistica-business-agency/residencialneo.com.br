@@ -65,6 +65,34 @@ const GlobalStyles = createGlobalStyle`
   width: 100%;
   height: 100%;
 }
+
+.float{
+	position:fixed;
+
+	bottom:40px;
+	right:40px;
+
+}
+
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-20px);
+    }
+    60% {
+        transform: translateX(-12px);
+    }
+}
 `
 
 export default GlobalStyles
