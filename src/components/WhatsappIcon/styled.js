@@ -9,4 +9,25 @@ export const WhatsappWrapper = styled.div`
   img {
     width: 40px;
   }
+  
+  .bounce {
+      animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+      0%,
+      25%,
+      50%,
+      75%,
+      100% {
+          transform: translateY(0);
+      }
+      40% {
+          transform: translateY(-20px);
+      }
+      60% {
+          transform: translateY(-12px);
+      }
+  }
 `
+
