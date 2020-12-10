@@ -13,7 +13,7 @@ const Downloads = () => (
         </a>
       </li>
       <li>
-        <a href="https://residencialneo.com.br/Disponibilidade-outubro.pdf" alt="Tabela de adesão" target="_blank">
+        <a href="https://residencialneo.com.br/tabela_disponibilidade.pdf" alt="Tabela de adesão" target="_blank">
           Tabela de adesão
         </a>
       </li>
